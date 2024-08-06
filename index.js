@@ -6,6 +6,10 @@ const cors = require('cors');
 const csv = require('fast-csv');
 const validator = require('validator');
 const rateLimit = require('express-rate-limit');
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 
 const db = new Database(path.resolve(__dirname, 'emails.db'));
 
